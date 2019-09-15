@@ -46,7 +46,15 @@ function browserSyncReload(done) {
 function clean() {
   return del(["./vendor/"]);
 }
+var deploy      = require('gulp-gh-pages');
 
+/**
+ * Push build to gh-pages
+ */
+gulp.task('deploy', function () {
+  return gulp.src("./dist/**/*")
+    .pipe(deploy())
+});
 // Bring third party dependencies from node_modules into vendor directory
 function modules() {
   // Bootstrap
