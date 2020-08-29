@@ -25,16 +25,16 @@
   <link href="css/resume.min.css" rel="stylesheet">
   <style>
     #portfolio-button{
-      background-color: darkblue;
-      color: white;
+      background-color: white;
+      color: orange;
       padding: 0.2em 0.5em;
-      text-decoration: none;
+      
       border-radius: 4px;
     }
     #page-top{
       background-image: linear-gradient(darkcyan,#fab534);
     }
-    p,h3,h2,div,h1 {
+    p,h1,h2,h3,div {
       color: white;
     }
     .m {
@@ -66,7 +66,10 @@
           <a class="nav-link js-scroll-trigger" href="#about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#experience">Projects</a>
+          <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#education">Education</a>
@@ -114,12 +117,30 @@
     <hr class="m-0">
     <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
       <div class="w-100">
+        <h2 class="mb-5">Experience</h2>
+        
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <a href="https://crio.do/"><h3 class="mb-0">Crio.Do</h3></a><p>Remote Student Developer</p><p>Jan-March 2020</p>
+            <p>I worked as a Student Developer at Crio.Do for Crio Launch Program, a 10-week online merit-based applied learning program.
+              I built QBox(QBox is a secure file-sharing service. It is a customized version of the popularly available VSFTPD server),QMoney (QMoney is a
+              visual stock portfolio analyzer. It helps portfolio managers make trade recommendations for their clients).</p>
+              <a id="portfolio-button" href="https://criodo.github.io/Crio-Launch-Feb-2020-hardik-mehta609/"><b>Details</b></a>
+          </div>
+        </div>        
+
+      </div>
+
+    </section>
+    <hr class="m-0">
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="projects">
+      <div class="w-100">
         <h2 class="mb-5">Projects</h2>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <a href="https://github.com/narayanshivansh49/SafeVote"><h3 class="mb-0">Safe Vote</h3><p>Web3JS, ReactJS, Azure Blockchain
-              Services</p></a>
+            <a href="https://github.com/narayanshivansh49/SafeVote"><h3 class="mb-0">Safe Vote</h3></a><p>Web3JS, ReactJS, Azure Blockchain
+              Services</p>
             <p>
               Blockchain based voting app with backend on Azure blockchain services and frontend built using
               ReactJS and Web3JS. Secured runner’s up position at Bit Mesra in Codefundo++ 2020.
@@ -129,7 +150,7 @@
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
           <div class="resume-content">
-            <a href="https://github.com/narayanshivansh49/Dynamic-Pricing"><h3 class="mb-0">GroBasket</h3> <p> Flask, ReactJS</p></a>
+            <a href="https://github.com/narayanshivansh49/Dynamic-Pricing"><h3 class="mb-0">GroBasket</h3> </a><p> Flask, ReactJS</p>
             <p>
               A mobile application to ease the pain of food wastage. It dynamically prices grocery items
               according to market demand of an area, shelf-life of product,quantity of product to stop food
@@ -139,14 +160,14 @@
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <a href="https://github.com/HardikM1999/BlogApp"><h3 class="mb-0">BlogApp</h3><p>ReactJS, Django</p></a>
+            <a href="https://github.com/HardikM1999/BlogApp"><h3 class="mb-0">BlogApp</h3></a><p>ReactJS, Django</p>
             <p>A Blogging Web site built using Django and ReactJS with features such as Comments, Likes.(Work Ongoing)</p>
           </div>
         </div>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <a href="https://github.com/HardikM1999/WikiLinkMapper"><h3 class="mb-0">Wiki Link Mapper</h3><p>BeautifulSoup, NetworkX, Matplotlib</p></a>
+            <a href="https://github.com/HardikM1999/WikiLinkMapper"><h3 class="mb-0">Wiki Link Mapper</h3></a><p>BeautifulSoup, NetworkX, Matplotlib</p>
             <p>WebCrawling Python Script which uses recursion to find links and produce a graph using networkx Python Library.</p>
           </div>
         </div>
@@ -166,10 +187,10 @@
             <h3 class="mb-0">Birla Institute Of Technology,Mesra</h3>
             <div class="subheading mb-3">B.E.</div>
             <div>Information Technology</div>
-            <p>CGPA: 7.69</p>
+            <p>CGPA: 7.69 (Absolute Grading)</p>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">August 2017 - May 2021</span>
+            <p>August 2017 - April 2021</p>
           </div>
         </div>
 
@@ -180,7 +201,7 @@
             <p>Percentage: 93.2%</p>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">2015 - 2017</span>
+            <p>2016 - 2017</p>
           </div>
         </div>
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
@@ -190,7 +211,7 @@
             <p>Percentage: 95%</p>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">2015</span>
+            <p>2014-2015</p>
           </div>
         </div>
       </div>
@@ -223,6 +244,9 @@
             <p><b>ReactJS</b></p>
           </li>
           <li class="list-inline-item">
+            <p><b>SQL</b></p>
+          </li>
+          <li class="list-inline-item">
             <p><b>Flask</b></p>
           </li>
           <li class="list-inline-item">
@@ -247,23 +271,23 @@
         <h2 class="mb-5">Achievements</h2>
         <ul class="fa-ul mb-0">
           <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
+            <i class="fa-li fa fa-trophy text"></i>
             <b>1st Runner's Up in Microsoft Codefundo++ 2019 in BIT Mesra.</b>
           </li>
           <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
+            <i class="fa-li fa fa-trophy text"></i>
             <b>Secured Top 20 rank out of 260+ teams at HackCBS in Delhi.</b>
           </li>
           <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
+            <i class="fa-li fa fa-trophy text"></i>
             <b>Secured Rank of 73 in Hackerearth Easy 2019.</b>
           </li>
           <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
+            <i class="fa-li fa fa-trophy text"></i>
             <b>Secured Rank of 98 in Codechef September CookOFF.</b>
           </li>
           <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
+            <i class="fa-li fa fa-trophy text"></i>
             <b>Won 3rd position as a team in CTF Event organised by IET, BIT Mesra.</b></li>
         </ul>
       </div>
@@ -274,13 +298,6 @@
     <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="certificates">
       <div class="w-100">
         <h2 class="mb-5">Certifications</h2>
-        
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <a href="https://raw.githubusercontent.com/CrioDo/Crio-Launch-Feb-2020-hardik-mehta609/gh-pages/static/media/Crio-Launch-Feb-2020-Certificate.png"><h3 class="mb-0">Crio Student Developer</h3></a>
-            <p>Crio Launch 2020 Certification <a id="portfolio-button" href="https://criodo.github.io/Crio-Launch-Feb-2020-hardik-mehta609/">Portfolio</a></p>
-          </div>
-        </div>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
